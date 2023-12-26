@@ -1,0 +1,25 @@
+/* Home.css
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+    .text-3xl {
+        font-size: 1.5rem;
+       
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .text-5xl {
+        font-size: 2rem;
+       
+    }
+}
+
+/* Larger Screens (Desktop) */
+@media (min-width: 1024px) {
+    .text-7xl {
+        font-size: 3rem;
+       
+    }
+}
