@@ -5,10 +5,13 @@ import Register from "./components/Register";
 import { Toaster } from "react-hot-toast";
 import Home from "./components/Home";
 import { Context } from ".";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import HomeNav from "./components/HomeNav";
 
 
 const App = () => {
-  const {  setAuth ,setLoading,server} = useContext(Context);
+  const {  setAuth ,auth,setLoading,server} = useContext(Context);
   const fetchData = async () => {
     try {
       const data = await fetch(`${server}/user/me`, {
@@ -36,14 +39,16 @@ const App = () => {
   return (
     <div>
       <BrowserRouter>
-         
+     
+         {auth?'': <HomeNav/>}
         <Routes>
-         <Route path="/" element={<Home/>}></Route>
-          <Route path="/login" element={ <Login/>} />
-          <Route path="/register" element={ <Register/>} />
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
-        <Toaster/>
+        <Toaster />
       </BrowserRouter>
+      <Footer />
     </div>
   );
 }
