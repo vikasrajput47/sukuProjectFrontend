@@ -80,7 +80,7 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <div className="mx-5 my-10 shadow border flex flex-col items-center justify-center">
+        <div className="mx-5 my-10   flex flex-col items-center justify-center">
           <div className="text-2xl font-bold my-5">Why Choose Us?</div>
           <div className="flex flex-wrap justify-center">
             {arr.map((item, key) => (
