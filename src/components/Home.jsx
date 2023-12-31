@@ -1,6 +1,5 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import bgImage from "./img/img1.jpg";
-import { data } from "./data/data";
 import { Context } from "..";
 import { Navigate } from "react-router-dom";
 import Navbar from "./Navbar";
@@ -46,11 +45,7 @@ const Home = () => {
         "We believe in continuous improvement by listening to our customers. We value feedback and incorporate it to give personalized solutions",
     },
   ];
-  const [filterValue, setFilterValue] = useState("");
 
-  const filteredData = data.filter((item) =>
-    item.vehicleNo.toLowerCase().includes(filterValue.toLowerCase())
-  );
 
   if (!auth) {
     return <Navigate to={"/login"} />;
