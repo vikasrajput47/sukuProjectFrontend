@@ -6,7 +6,6 @@ import { Toaster } from "react-hot-toast";
 import Home from "./components/Home";
 import { Context } from ".";
 import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
 import HomeNav from "./components/HomeNav";
 
 
