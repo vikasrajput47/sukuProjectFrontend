@@ -7,7 +7,10 @@ const HomeNav = () => {
       <div className="md:flex items-center">
         <li className="list-none mx-4 md:mx-10 text-2xl flex items-center">
           <img src={logo} className="h-12" alt="" />
-          <strong className="mx-2 md:mx-6">Trident 3t Marketing</strong>
+          <strong className="mx-2 md:mx-6 text-pink-600">
+            Trident 3T Marketing
+            <p className="text-sm md:text-base text-black md:hidden text-center">A ride that takes you further</p>
+          </strong>
         </li>
       </div>
 
